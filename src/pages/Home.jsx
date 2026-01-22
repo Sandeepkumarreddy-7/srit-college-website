@@ -1,25 +1,26 @@
 function Home() {
   return (
     <>
-      {/* HERO SECTION */}
-      <section className="hero">
-        <h1>Welcome to SRIT College</h1>
-        <p>
-          Empowering students through quality education, innovation,
-          and industry-ready skills.
-        </p>
-        <button
-  className="hero-btn"
-  onClick={() =>
-    document
-      .getElementById("academics")
-      .scrollIntoView({ behavior: "smooth" })
-  }
->
-  Explore Academics
-</button>
+    <section className="hero">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="hero-video"
+  >
+    <source src="/src/assets/videos/hero-bg.mp4" type="video/mp4" />
+  </video>
 
-      </section>
+  <div className="hero-overlay">
+    <h1>Welcome to SRIT</h1>
+    <p>
+      Empowering students with knowledge, innovation, and industry-ready skills.
+    </p>
+    <button className="hero-btn">Explore Courses</button>
+  </div>
+</section>
+
 
       {/* COURSES SECTION */}
      <section id="academics" className="courses">

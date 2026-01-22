@@ -1,66 +1,66 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Departments from "./pages/Departments";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import StudentLogin from "./pages/StudentLogin";
-import FacultyLogin from "./pages/FacultyLogin";
-import Clubs from "./pages/Clubs";
-import Circulars from "./pages/Circulars";
-import ExamNotifications from "./pages/ExamNotifications";
-import AdminDashboard from "./pages/AdminDashboard";
 import ScrollToTop from "./components/ScrollToTop";
 
-
-// Department pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Academics from "./pages/Academics";
 import Departments from "./pages/Departments";
 import CSE from "./pages/Departments/CSE";
-import AIDS from "./pages/Departments/AIDS";
 import ECE from "./pages/Departments/ECE";
 import EEE from "./pages/Departments/EEE";
 import ME from "./pages/Departments/ME";
 import CE from "./pages/Departments/CE";
+import Clubs from "./pages/Clubs";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <BrowserRouter>
-
-      <>
-        <Navbar />
-
-        <Routes>
-          <Route path="/" element={<div>Home</div>} />
-
-          <Route path="/departments" element={<Departments />} />
-          <Route path="/departments/cse" element={<CSE />} />
-          <Route path="/departments/aids" element={<AIDS />} />
-          <Route path="/departments/ece" element={<ECE />} />
-          <Route path="/departments/eee" element={<EEE />} />
-          <Route path="/departments/me" element={<ME />} />
-          <Route path="/departments/ce" element={<CE />} />
-        </Routes>
-      </>
-
       <Navbar />
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/academics" element={<Academics />} />
+
         <Route path="/departments" element={<Departments />} />
+        <Route path="/departments/cse" element={<CSE />} />
+        <Route path="/departments/ece" element={<ECE />} />
+        <Route path="/departments/eee" element={<EEE />} />
+        <Route path="/departments/me" element={<ME />} />
+        <Route path="/departments/ce" element={<CE />} />
+
+        <Route path="/clubs" element={<Clubs />} />
         <Route path="/contact" element={<Contact />} />
-          <Route path="/student-login" element={<StudentLogin />} />
-                <Route path="/faculty-login" element={<FacultyLogin />} />
-                <Route path="/clubs" element={<Clubs />} />
-                <Route path="/circulars" element={<Circulars />} />
-<Route path="/exam-notifications" element={<ExamNotifications />} />
-<Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route
+  path="/"
+  element={
+    <>
+      <Navbar transparent />
+      <Home />
+    </>
+  }
+/>
 
-        
+<Route
+  path="*"
+  element={
+    <>
+      <Navbar />
+      <Routes>
+        {/* other routes */}
       </Routes>
-      <ScrollToTop />
-      <Footer />
+    </>
+  }
+/>
 
+      </Routes>
+      
+
+      <Footer />
     </BrowserRouter>
   );
 }

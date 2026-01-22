@@ -27,6 +27,7 @@ function CSE() {
             <li>Web & Mobile Application Development</li>
           </ul>
         </div>
+          
 
         <div className="info-card">
           <h3>Laboratories</h3>
