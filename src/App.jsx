@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Academics from "./pages/Academics";
 import Departments from "./pages/Departments";
+import Academics from "./pages/Academics/index.jsx";
 import Clubs from "./pages/Clubs";
 
 function App() {

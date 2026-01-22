@@ -4,14 +4,14 @@ function Academics() {
       <h1 style={{ color: "red" }}>ACADEMICS PAGE WORKING</h1>
 
       <p className="page-intro">
-        SRIT follows an outcome-based education system with a strong emphasis on
-        academic excellence, continuous assessment, and industry readiness.
+        SRIT follows an outcome-based education framework focused on academic
+        excellence, continuous assessment, and industry readiness.
       </p>
 
       <div className="card-grid">
         <div className="info-card">
           <h3>Academic Regulations</h3>
-          <p>Autonomous curriculum aligned with AICTE & UGC standards.</p>
+          <p>Autonomous curriculum aligned with AICTE and UGC guidelines.</p>
         </div>
 
         <div className="info-card">
@@ -21,7 +21,7 @@ function Academics() {
 
         <div className="info-card">
           <h3>Evaluation System</h3>
-          <p>Continuous Internal Evaluation and End Semester Exams.</p>
+          <p>Continuous Internal Evaluation and End Semester Examinations.</p>
         </div>
       </div>
     </section>
