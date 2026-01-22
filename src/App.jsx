@@ -9,6 +9,7 @@ import ECE from "./pages/Departments/ECE";
 import EEE from "./pages/Departments/EEE";
 import ME from "./pages/Departments/ME";
 import CE from "./pages/Departments/CE";
+import Clubs from "./pages/Clubs";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/departments/eee" element={<EEE />} />
           <Route path="/departments/me" element={<ME />} />
           <Route path="/departments/ce" element={<CE />} />
+          <Route path="/Clubs" element={<Clubs />} />
         </Routes>
       </>
     </BrowserRouter>

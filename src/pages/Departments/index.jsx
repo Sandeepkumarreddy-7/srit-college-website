@@ -18,10 +18,6 @@ function Departments() {
           <h3>Computer Science & Engineering</h3>
           <p>Software systems, AI, data science, and core computing.</p>
         </Link>
-        <Link to="/departments/cse" className="info-card link-card">
-          <h3>Computer Science & Engineering</h3>
-          <p>Software systems, AI, data science, and core computing.</p>
-        </Link>
 
         <Link to="/departments/aids" className="info-card link-card">
           <h3>Artificial Intelligence & Data Science</h3>
