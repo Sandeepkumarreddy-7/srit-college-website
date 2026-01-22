@@ -1,32 +1,28 @@
 function Clubs() {
   return (
-    <section className="clubs">
+    <section>
       <h1>Student Clubs</h1>
-      <p className="clubs-subtitle">
-        Encouraging innovation, leadership, and creativity beyond academics.
+
+      <p>
+        SRIT encourages holistic development through various technical,
+        cultural, and professional student clubs.
       </p>
 
-      <div className="clubs-grid">
-        <div className="club-card">
-          <h3>Technical Club</h3>
-          <p>Hackathons, Toastmaster, workshops, and project development.</p>
-        </div>
+      <h2>Technical Clubs</h2>
+      <ul>
+        <li>Software Development Club</li>
+        <li>Coding Club</li>
+        <li>Robotics Club</li>
+        <li>Cloud & DevOps Club</li>
+      </ul>
 
-        <div className="club-card">
-          <h3>Cultural Club</h3>
-          <p>Shutterbugs</p>
-        </div>
-
-        <div className="club-card">
-          <h3>Sports Club</h3>
-          <p>Indoor & outdoor sports, tournaments, and fitness activities.</p>
-        </div>
-
-        <div className="club-card">
-          <h3>Innovation Club</h3>
-          <p>Startup ideas, product building, and research initiatives.</p>
-        </div>
-      </div>
+      <h2>Cultural & Other Clubs</h2>
+      <ul>
+        <li>Photography Club</li>
+        <li>Music & Dance Club</li>
+        <li>Literary Club</li>
+        <li>Sports Club</li>
+      </ul>
     </section>
   );
 }
