@@ -26,8 +26,19 @@ function Footer() {
       </div>
 
       <p className="footer-bottom">
-        © 2026 SRIT College. All rights reserved.
+      
       </p>
+      <footer className="footer">
+  <div className="footer-content">
+    {/* footer columns like links, contact, address */}
+  </div>
+
+  {/* FOOTER BOTTOM */}
+  <div className="footer-bottom">
+    <p>© 2026 SRIT | Approved by AICTE | Affiliated to JNTU</p>
+  </div>
+</footer>
+
     </footer>
   );
 }

@@ -1,17 +1,23 @@
-import { Link } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Departments() {
   return (
-    <section className="departments">
-      <h1>Departments</h1>
-      <p>Select a department to explore details.</p>
+    <section className="departments-layout">
+      {/* LEFT SIDEBAR */}
+      <aside className="dept-sidebar">
+        <h2>Departments</h2>
 
-      <div className="departments-grid">
-        <Link to="/departments/cse" className="dept-card">CSE</Link>
-        <Link to="/departments/ece" className="dept-card">ECE</Link>
-        <Link to="/departments/eee" className="dept-card">EEE</Link>
-        <Link to="/departments/me" className="dept-card">ME</Link>
-        <Link to="/departments/ce" className="dept-card">CE</Link>
+        <NavLink to="cse" className="dept-link">CSE</NavLink>
+        <NavLink to="aids" className="dept-link">AI & DS</NavLink>
+        <NavLink to="ece" className="dept-link">ECE</NavLink>
+        <NavLink to="eee" className="dept-link">EEE</NavLink>
+        <NavLink to="me" className="dept-link">Mechanical</NavLink>
+        <NavLink to="ce" className="dept-link">Civil</NavLink>
+      </aside>
+
+      {/* RIGHT CONTENT */}
+      <div className="dept-content">
+        <Outlet />
       </div>
     </section>
   );

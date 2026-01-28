@@ -14,7 +14,7 @@ function About() {
 
       {/* PRINCIPAL MESSAGE */}
       <div className="principal fade-in">
-        <h2>Principal’s Message</h2>
+        <h2>CULTURE   </h2>
         <p className="principal-text">
           “At SRIT, we believe education is not just about knowledge, but about
           shaping responsible professionals and leaders. Our focus is on

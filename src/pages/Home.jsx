@@ -17,6 +17,12 @@ function Home() {
     <p>
       Empowering students with knowledge, innovation, and industry-ready skills.
     </p>
+    <div className="hero-badges">
+  <span>NBA Accredited</span>
+  <span>NAAC A+</span>
+  <span>Autonomous</span>
+</div>
+
     <button className="hero-btn">Explore Courses</button>
   </div>
 </section>
