@@ -80,20 +80,17 @@ function Home() {
 
   <div className="logo-slider">
     <div className="logo-track">
-      <img src="/src/assets/placements/tcs.png" alt="TCS" />
-      <img src="/src/assets/placements/infosys.png" alt="Infosys" />
-      <img src="/src/assets/placements/wipro.png" alt="Wipro" />
-      <img src="/src/assets/placements/accenture.png" alt="Accenture" />
-      <img src="/src/assets/placements/cognizant.png" alt="Cognizant" />
-      <img src="/src/assets/placements/amazon.png" alt="Amazon" />
+<div className="logo-track">
+  <img src="/logos/tcs.png" alt="TCS" />
+  <img src="/logos/infosys.png" alt="Infosys" />
+  <img src="/logos/wipro.png" alt="Wipro" />
+  <img src="/logos/accenture.png" alt="Accenture" />
+  <img src="/logos/cognizant.png" alt="Cognizant" />
 
-      {/* duplicate for seamless animation */}
-      <img src="/src/assets/placements/tcs.png" alt="TCS" />
-      <img src="/src/assets/placements/infosys.png" alt="Infosys" />
-      <img src="/src/assets/placements/wipro.png" alt="Wipro" />
-      <img src="/src/assets/placements/accenture.png" alt="Accenture" />
-      <img src="/src/assets/placements/cognizant.png" alt="Cognizant" />
-      <img src="/src/assets/placements/amazon.png" alt="Amazon" />
+  <img src="/logos/amazon.png" alt="Amazon" />
+
+</div>
+
     </div>
   </div>
 </section>
